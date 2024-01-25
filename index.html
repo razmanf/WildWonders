@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="background-image">     <!--Body Section - Background Image of Website-->
+
+  <!--Header Section-->
 
   <header class="header">
     <section>
@@ -29,6 +31,8 @@
   </header>
 
   <main>
+
+    <!--Navigation Bar Section-->
 
     <nav class="navbar">
         <input type="checkbox" id="check">
@@ -52,6 +56,8 @@
         </ul>
     </nav>
 
+    <!--Content Starts - Section 1 - Banner Image and Content-->
+
     <section class="banner">
       <section class="banner-content">
         <h1 class="h1">WILD WONDERS</h1>
@@ -61,22 +67,25 @@
       </section>
     </section>
 
-    <section class="body-bg"></section>
+    <!--Section 2 - Overview-->
 
     <section class="container" id="container-info-h1">
-      <section class="container-info">
-        <h1 class="h1">Overview</h1>
-          <p class="p">
-            Sri Lanka, an island nation located in the Indian Ocean, is renowned for its rich biodiversity and diverse ecosystems. 
-            The country's wildlife is characterized by a fascinating array of species, many of which are endemic, meaning they are found nowhere 
-            else in the world. Sri Lanka's varied landscapes, including lush rainforests, dry plains, highland regions, and coastal areas, 
-            contribute to the remarkable diversity of its flora and fauna.</p> 
-          
-          <p class="p">Here at Wild Wonders, we have a goal of boosting tourism after it was severly impacted due to the COVID-19 pandemic 
-            and the Islandwide protests which took place in 2022. Nature enthusiasts and wildlife lovers from around the globe will have the 
-            opportunity to discover a glimpse into the complex web of life that thrives across the Island's landscapes, making it a top 
-            destination for holiday travel.</p>
-      </section>
+        <section class="container-info">
+          <h1 class="h1">Overview</h1>
+          <img class="img" src="./images/overview-img.jpg" alt="Overview Image">
+            <p class="p">
+              Sri Lanka, an island nation located in the Indian Ocean, is renowned for its rich biodiversity and diverse ecosystems. 
+              The country's wildlife is characterized by a fascinating array of species, many of which are endemic, meaning they are found nowhere 
+              else in the world. Sri Lanka's varied landscapes, including lush rainforests, dry plains, highland regions, and coastal areas, 
+              contribute to the remarkable diversity of its flora and fauna.</p> 
+            
+            <p class="p">Here at Wild Wonders, we have a goal of boosting tourism after it was severly impacted due to the COVID-19 pandemic 
+              and the Islandwide protests which took place in 2022. Nature enthusiasts and wildlife lovers from around the globe will have the 
+              opportunity to discover a glimpse into the complex web of life that thrives across the Island's landscapes, making it a top 
+              destination for holiday travel.</p>
+        </section>
+
+      <!--Section 3 - 3 Cards With Images and Content-->
 
       <section class="card-container">
         <section class="card">
@@ -88,7 +97,7 @@
               <br>
               <p class="p">The island's compact size has resulted in a high degree of endemism, making it a biodiversity hotspot of global 
                 significance.</p>
-              <a href="introduction.html" class="btn2">Explore More</a>
+              <a href="introduction.html" class="btn2">Read More</a>
               <br>
           </section>
         </section>
@@ -104,9 +113,10 @@
                 toque macaque and purple-faced langur.</p>
               <br>
               <br>
-              <a href="animals.html" class="btn2">Explore More</a>
+              <a href="introduction.html#table" class="btn2">Read More</a>
           </section>
         </section>
+
         <section class="card">
           <img src="./images/home-card3.jpg" alt="Avian Wonders">
           <section class="card-content">
@@ -118,41 +128,72 @@
               <br>
               <br>
               <br>
-              <a href="introduction.html" class="btn2">Explore More</a>
+              <a href="introduction.html" class="btn2">Read More</a>
           </section>
         </section>
       </section>
-      
+
+      <!--Section 4 - Protected Areas and National Parks-->
+        
       <section class="container-info" id="container-info-h2">
         <h2 class="h2">Protected Areas and National Parks</h2>
           <p class="p">To safeguard its unique biodiversity, Sri Lanka has established a network of protected areas and national parks. They are:</p> 
-          <p class="p">
-            <ol class="ol">
-              <li>Yala National Park</li>
-              <li>Wilpattu National Park</li>
-              <li>Horton Plains National Park</li>
-            </ol>
-          </p>
-          <p class="p"> These are just a few examples where visitors can witness the country's wildlife in their natural habitats.</p>
+        <section class="card-container">
+          <section class="card">
+            <iframe class="rotating-image" src="https://www.google.com/maps/embed?pb=!4v1706208425684!6m8!1m7!1sCAoSLEFGMVFpcFBXVFFnVnlrcDIwcEFiTi0tRHNWclhVYjNHNFctM3ZxR1Rha0l2!2m2!1d6.3517687!2d81.4458028!3f12.375109916462703!4f5.853895985496635!5f0.7820865974627469" width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Yala National Park</h3>
+                <a href="yala.html" class="btn2">Read More</a>
+            </section>
+          </section>
+
+          <section class="card">
+            <iframe class="rotating-image" src="https://www.google.com/maps/embed?pb=!4v1706206521304!6m8!1m7!1sCAoSLEFGMVFpcE1vT3g4UzItS1ExVEFqdmJ0ZFVMWnRCZzFTZ3dvNTBFbllmQVpx!2m2!1d8.4563723!2d80.0476383!3f187.45222153393982!4f7.077420043178492!5f0.7820865974627469" width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Wilpattu National Park</h3>
+                <a href="wilpattu.html" class="btn2">Read More</a>
+            </section>
+          </section>
+          
+          <section class="card">
+            <iframe class="rotating-image" src="https://www.google.com/maps/embed?pb=!4v1706207955487!6m8!1m7!1sCAoSK0FGMVFpcFBRVGZQdnJQVm55T3dHX1FqdnRkeTdCbU0takJnOWVWZThseWc.!2m2!1d6.802097499999999!2d80.8074046!3f126.7186632108812!4f3.87514740524783!5f0.4000000000000002" width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Horton Plains National Park</h3>
+                <a href="introduction.html" class="btn2">Read More</a>
+            </section>
+          </section>
+        </section>
+        <p class="p"> These are just a few examples where visitors can witness the country's wildlife in their natural habitats.</p>
       </section>
 
-      <section class="container-info" id="h2">
-        <h2 class="h2">Conservation Challenges</h2>
+      <!--Section 4 - Conservation Challenges-->
+    
+      <section class="container-info leopard">
+        <h2 class="h2" id="h2">Conservation Challenges</h2>
+        <img class="container-info img" src="./images/poaching-home.jpg" alt="Conservation Challenges">
           <p class="p">Despite its ecological richness, Sri Lanka faces challenges related to:</p> 
           <p class="p">
-            <ul class="ul">
-              <li>Poaching</li>
-              <li>Habitat loss</li>
-              <li>Human-Wildlife Conflict</li>
-            </ul>
+            <ol class="ol">
+              <li>Habitat Loss and Fragmentation</li>
+                <ul class="ul">
+                  <li>Land development</li>
+                  <li>Deforestation</li>
+                </ul>
+                <li>Human-Wildlife Conflict</li>
+                <ul class="ul">
+                  <li>Increasing encroachment into wildlife habitats by humans</li>
+                  <li>Elephants often clash with local communities</li>
+                </ul>
+            </ol>
+            <a class="btn2" href="srilankanleopard.html">Read More</a>            
           </p>
           <p class="p">Conservation efforts are underway to address these issues and ensure the long-term survival of the island's unique wildlife.</p>
       </section>
-
-
     </section>
 
   </main>
+
+    <!--Footer Section-->
 
   <footer class="footer">
     <div class="container2">
