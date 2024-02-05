@@ -118,6 +118,9 @@
 .submenu a:hover {
   background-color: #555;
 }
+.submenu ul li a.active{
+  background-color: #555;
+}
 .navbar li:hover .submenu{
   display: block;
 }
