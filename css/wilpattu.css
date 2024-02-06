@@ -836,7 +836,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
     background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
     overflow: hidden;
   }

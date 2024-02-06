@@ -649,7 +649,6 @@ table {
   margin: 20px auto;
   border-collapse: collapse;
 }
-
 thead th, tbody td, tfoot td {
   padding: 15px;
   text-align: left;
@@ -725,18 +724,6 @@ tfoot .p {
 a:hover {
  cursor:pointer;
 }
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 .h1{
   display: inline-block;
   font-weight: 900;
@@ -781,12 +768,38 @@ a:hover {
   background-size: cover;
   z-index: -2;
 }
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .container-info .h1{
+    font-size: 35px;
+  }
+}
+@media (max-width: 440px){
+  .card-content .h3{
+    font-size: 20px;
+  }
+}
 @media (max-width: 380px){
   .container{
     margin: auto 80px;
   }
   .container-intro{
     margin: auto 80px;
+  }
+  .container-info .h1{
+    font-size: 20px;
+  }
+  .card-content .h3{
+    font-size: 15px;
   }
 }
 
@@ -920,7 +933,6 @@ hr{
     padding: 15px;
     white-space: nowrap;
   }
-  
 }
 @media (max-width: 410px){
   .footer {
