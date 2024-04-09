@@ -1,0 +1,30 @@
+{
+    "yalaFacts": [
+      {
+        "title": "Tourism",
+        "image": "./images/yala_tourism.jpg",
+        "description": "The Yala National Park is the most visited park in Sri Lanka. In 2002 around 156,867 tourists visited the park. Foreigners, especially Europeans, account for 30% of total visitors. Block I is the main area for visits. From January to June in 2008, 9,078 local tourists and 7,532 foreigners have visited Yala. For the same period of time in 2009 the arrivals have risen to 18,031 locals and foreigners to 10,439."
+      },
+      {
+        "title": "Geographics of the Park",
+        "image": "./images/yala_geographics.jpg",
+        "description": "Yala (යාල) National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean. The park consists of five blocks, three of which are now open to the public. The park covers 979 square kilometres (378 sq mi) and is located about 300 kilometres (190 mi) from Colombo."
+      },
+      {
+        "title": "Cultural Importance",
+        "image": "./images/yala_culture.jpg",
+        "description": "Yala had been a center of past civilisations. King Ravana, the mythical Hindu anti-hero is believed to have established his kingdom here with Ravana Kotte, now submerged in the sea, as its boundary. During the colonial period Yala became a popular hunting ground. Yala is annually visited by 400,000 pilgrims."
+      }
+    ],
+    "yalaGallery": [
+      "./images/yala_gallery_1.jpg",
+      "./images/yala_gallery_2.webp",
+      "./images/yala_gallery_3.webp",
+      "./images/yala_gallery_4.webp",
+      "./images/yala_gallery_5.jpg",
+      "./images/yala_gallery_6.webp",
+      "./images/yala_gallery_7.webp",
+      "./images/yala_gallery_8.webp"
+    ]
+  }
+  

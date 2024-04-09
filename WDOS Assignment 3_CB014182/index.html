@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Wonders</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="./newsletter.js"></script>
+</head>
+
+<body class="background-image"> <!--Body Section - Background Image of Website-->
+
+  <!--Header Section-->
+
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="./images/logo.png" alt="Wild Wonders Logo">
+      </a>
+    </section>
+  </header>
+
+  <main>
+    <!-- Logout button -->
+    <button class="logout-button" onclick="logout()">Logout</button>
+
+<!-- Button to open the Content Editor -->
+<button onclick="openContentEditor()">Open Content Editor</button>
+
+<!-- Content Editor popup -->
+<div id="contentEditor" class="popup" style="display: none;">
+  <h2>Edit Content</h2>
+  <!-- Add your content editing fields here -->
+  <textarea rows="4" cols="50">Enter your content here...</textarea>
+  <br>
+  <!-- Button to save edited content -->
+  <button onclick="saveContent()">Save</button>
+  <!-- Button to close the popup -->
+  <button onclick="closeContentEditor()">Close</button>
+</div>
+
+
+    <!--Navigation Bar Section-->
+
+    <nav class="navbar">
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="srilankanleopard.html">Sri Lankan Leopard</a></li>
+        <li class="hover"><a href="animals.html">Animals</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="yala.html">Yala National Park</a></li>
+              <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Content Starts - Section 1 - Banner Image and Content-->
+
+    <section class="banner">
+      <section class="banner-content">
+        <h1 class="h1">WILD WONDERS</h1>
+        <p class="p">Discover the Pristine Wildlife of Sri Lanka!</p>
+        <button type="button"><span></span><a href="introduction.html">Learn More</a></button>
+        <button type="button"><span></span><a href="department.html">Contact Us</a></button>
+      </section>
+    </section>
+
+    <!--Section 2 - Overview-->
+
+    <section class="container" id="container-info-h1">
+      <section class="container-info">
+        <h1 class="h1">Overview</h1>
+        <br>
+        <br>
+        <br>
+        <img src="./images/overview-img.jpg" alt="Overview Image">
+        <p class="p">
+          Sri Lanka, an island nation located in the Indian Ocean, is renowned for its rich biodiversity and diverse
+          ecosystems.
+          The country's wildlife is characterized by a fascinating array of species, many of which are endemic, meaning
+          they are found nowhere
+          else in the world. Sri Lanka's varied landscapes, including lush rainforests, dry plains, highland regions,
+          and coastal areas,
+          contribute to the remarkable diversity of its flora and fauna.</p>
+
+        <p class="p">Here at Wild Wonders, we have a goal of boosting tourism after it was severly impacted due to the
+          COVID-19 pandemic
+          and the Islandwide protests which took place in 2022. Nature enthusiasts and wildlife lovers from around the
+          globe will have the
+          opportunity to discover a glimpse into the complex web of life that thrives across the Island's landscapes,
+          making it a top
+          destination for holiday travel.</p>
+      </section>
+
+      <!--Section 3 - 3 Cards With Images and Content-->
+
+      <section class="card-container">
+        <section class="card">
+          <img src="./images/home-card1.jpg" alt="Breathtaking Biodiversity">
+          <section class="card-content">
+            <h3 class="h3">Breathtaking Biodiversity</h3>
+            <p class="p">Sri Lanka is home to a remarkable variety of wildlife, with an estimated 123 species of
+              mammals,
+              227 species of birds, 178 species of reptiles, and numerous amphibians and invertebrates. </p>
+            <br>
+            <p class="p">The island's compact size has resulted in a high degree of endemism, making it a biodiversity
+              hotspot of global
+              significance.</p>
+            <a href="introduction.html" class="btn2">Read More</a>
+            <br>
+          </section>
+        </section>
+
+        <section class="card">
+          <img src="./images/home-card2.jpg" alt="Unique Mammals">
+          <section class="card-content">
+            <h3 class="h3">Unique Mammals</h3>
+            <p class="p">Sri Lanka boasts several unique mammalian species, including the elusive Sri Lankan leopard
+              (Panthera pardus kotiya),
+              which is the island's top predator.</p>
+            <br>
+            <p class="p">Other notable mammals include the sloth bear, elephant, sambar deer, and various species of
+              primates such as the
+              toque macaque and purple-faced langur.</p>
+            <br>
+            <br>
+            <a href="introduction.html#table" class="btn2">Read More</a>
+          </section>
+        </section>
+
+        <section class="card">
+          <img src="./images/home-card3.jpg" alt="Avian Wonders">
+          <section class="card-content">
+            <h3 class="h3">Avian Wonders</h3>
+            <p class="p">The avifauna of Sri Lanka is equally captivating, with a diverse range of bird species.</p>
+            <br>
+            <p class="p">Endemic birds like the Sri Lanka junglefowl, Sri Lanka wood pigeon, and the vividly colored Sri
+              Lanka hanging parrot
+              add to the country's ornithological charm.</p>
+            <br>
+            <br>
+            <br>
+            <a href="introduction.html" class="btn2">Read More</a>
+          </section>
+        </section>
+      </section>
+
+      <!--Section 4 - Protected Areas and National Parks-->
+
+      <section class="container-info" id="container-info-h2">
+        <h2 class="h2" contenteditable="true"> cProtected Areas and National Parks</h2>
+        <p class="p">To safeguard its unique biodiversity, Sri Lanka has established a network of protected areas and
+          national parks. They are:</p>
+        <section class="card-container">
+          <section class="card">
+            <iframe class="rotating-image"
+              src="https://www.google.com/maps/embed?pb=!4v1706208425684!6m8!1m7!1sCAoSLEFGMVFpcFBXVFFnVnlrcDIwcEFiTi0tRHNWclhVYjNHNFctM3ZxR1Rha0l2!2m2!1d6.3517687!2d81.4458028!3f12.375109916462703!4f5.853895985496635!5f0.7820865974627469"
+              width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Yala National Park</h3>
+              <a href="yala.html" class="btn2">Read More</a>
+            </section>
+          </section>
+
+          <section class="card">
+            <iframe class="rotating-image"
+              src="https://www.google.com/maps/embed?pb=!4v1706206521304!6m8!1m7!1sCAoSLEFGMVFpcE1vT3g4UzItS1ExVEFqdmJ0ZFVMWnRCZzFTZ3dvNTBFbllmQVpx!2m2!1d8.4563723!2d80.0476383!3f187.45222153393982!4f7.077420043178492!5f0.7820865974627469"
+              width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Wilpattu National Park</h3>
+              <a href="wilpattu.html" class="btn2">Read More</a>
+            </section>
+          </section>
+
+          <section class="card">
+            <iframe class="rotating-image"
+              src="https://www.google.com/maps/embed?pb=!4v1706207955487!6m8!1m7!1sCAoSK0FGMVFpcFBRVGZQdnJQVm55T3dHX1FqdnRkeTdCbU0takJnOWVWZThseWc.!2m2!1d6.802097499999999!2d80.8074046!3f126.7186632108812!4f3.87514740524783!5f0.4000000000000002"
+              width="490" height="327" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="card-content">
+              <h3 class="h3">Horton Plains National Park</h3>
+              <a href="introduction.html" class="btn2">Read More</a>
+            </section>
+          </section>
+        </section>
+        <p class="p"> These are just a few examples where visitors can witness the country's wildlife in their natural
+          habitats.</p>
+      </section>
+
+      <!--Section 4 - Conservation Challenges-->
+
+      <section class="container-info leopard">
+        <h2 class="h2" id="h2">Conservation Challenges</h2>
+        <img class="img" src="./images/poaching-home.jpg" alt="Conservation Challenges">
+        <p class="p">Despite its ecological richness, Sri Lanka faces challenges related to:</p>
+        <p class="p">
+        <ol class="ol">
+          <li>Habitat Loss and Fragmentation</li>
+          <ul class="ul">
+            <li>Land development</li>
+            <li>Deforestation</li>
+          </ul>
+          <li>Human-Wildlife Conflict</li>
+          <ul class="ul">
+            <li>Increasing encroachment into wildlife habitats by humans</li>
+            <li>Elephants often clash with local communities</li>
+          </ul>
+        </ol>
+        <a class="btn2" href="srilankanleopard.html">Read More</a>
+        </p>
+        <p class="p">Conservation efforts are underway to address these issues and ensure the long-term survival of the
+          island's unique wildlife.</p>
+      </section>
+    </section>
+
+  </main>
+
+  <!--Footer Section-->
+
+  <footer class="footer">
+    <div class="container2">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Home</h4>
+          <ul>
+            <li><a href="#container-info-h1">Overview</a></li>
+            <li><a href="#container-info-h2">Protected Areas and National Parks</a></li>
+            <li><a href="#container-info-h2">Conservation Challenges</a></li>
+          </ul>
+        </div>
+
+        <!-- 2nd Column -->
+        <div class="footer-col">
+          <a href="introduction.html">
+            <h4>Introduction</h4>
+          </a>
+        </div>
+
+        <!-- 3rd Column -->
+        <div class="footer-col">
+          <a href="department.html">
+            <h4>Department</h4>
+          </a>
+        </div>
+
+        <!-- 4th Column -->
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Enter Email" class="inputEmail">
+            <input type="submit" value="Submit" class="inputSubmit">
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p>&#169; 2024 Wild Wonders. All Rights Reserved.</p>
+        </div>
+        <div class="socialIcons">
+          <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    fetch('index.json')
+      .then(response => response.json())
+      .then(data => {
+
+        // Populate footer links
+        const footerLinks = document.querySelectorAll('.footer .footer-col ul');
+        data.footerLinks.forEach((item, index) => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = item.link;
+          a.textContent = item.title;
+          li.appendChild(a);
+          footerLinks[index].appendChild(li);
+        });
+
+        // Populate social media icons
+        const socialIcons = document.querySelector('.footer .socialIcons');
+        Object.entries(data.socialLinks).forEach(([key, value]) => {
+          const a = document.createElement('a');
+          a.href = value;
+          const icon = document.createElement('i');
+          icon.classList.add('fa-brands', `fa-${key}`);
+          a.appendChild(icon);
+          socialIcons.appendChild(a);
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+
+    function logout() {
+      // Remove user's details from localStorage
+      localStorage.removeItem('loggedInUser');
+      // Redirect to the login page
+      window.location.href = 'login.html';
+    }
+
+  </script>
+
+  <script>
+    // Function to open the Content Editor popup
+    function openContentEditor() {
+      document.getElementById('contentEditor').style.display = 'block';
+    }
+
+    // Function to close the Content Editor popup
+    function closeContentEditor() {
+      document.getElementById('contentEditor').style.display = 'none';
+    }
+
+    // Function to save the edited content
+    function saveContent() {
+      // Add code here to save the content
+      closeContentEditor(); // Close the Content Editor popup after saving
+    }
+  </script>
+
+
+</body>
+
+</html>
+
+<!--Images derived from pexels.com and pixabay.com
+    Content taken from TripAdvisor and Sri Lanka Tourism websites.
+-->

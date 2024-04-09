@@ -1,0 +1,42 @@
+{
+    "leopardInfo": [
+      {
+        "title": "Yala National Park",
+        "location": "Yala National Park, situated in the southeastern corner of Sri Lanka, is the country's most renowned wildlife sanctuary.",
+        "habitat": "The park boasts a diverse range of ecosystems, including dense forests, grasslands, and coastal areas, creating an ideal habitat for leopards.",
+        "population": "Yala National Park has one of the highest leopard densities in the world, providing visitors with a good chance of spotting these elusive big cats.",
+        "bestTime": "The dry season from February to July is considered the best time for leopard sightings when the animals gather near water sources."
+      },
+      {
+        "title": "Wilpattu National Park",
+        "location": "Wilpattu National Park, located in the northwest of Sri Lanka, is the largest national park in the country.",
+        "habitat": "The park is characterized by dense scrublands, natural lakes (villus), and open grassy plains, creating an ideal environment for leopards to thrive.",
+        "population": "Wilpattu is home to a significant population of leopards, and its expansive landscapes provide both challenges and opportunities for leopard enthusiasts.",
+        "bestTime": "The dry season from June to September is recommended for wildlife safaris, offering better visibility and increased chances of leopard sightings."
+      },
+      {
+        "title": "Udawalawe National Park",
+        "location": "Udawalawe National Park, situated in the southern part of Sri Lanka, is renowned for its large population of Asian elephants.",
+        "habitat": "The park features open grasslands and scrub forests, providing a contrasting environment for leopards compared to the more forested areas.",
+        "population": "While Udawalawe is not as famous for leopards as some other parks, sightings are still possible, and the park offers a unique landscape for observing these big cats.",
+        "bestTime": "Udawalawe is a year-round destination, and visitors have a good chance of spotting leopards during their exploration of the park."
+      }
+    ],
+    "threats": [
+      {
+        "title": "Habitat Loss and Fragmentation",
+        "image": "./images/leopard-threat-1.jpg",
+        "consequences": "Deforestation and land development lead to the loss and fragmentation of the leopard's natural habitat, reducing available territories and prey.",
+        "mitigation": "Conservation efforts focus on preserving and restoring critical habitats, establishing protected areas, and implementing sustainable land-use practices.",
+        "link": "https://www.leopocon.org/#:~:text=Leopocon%20Sri%20Lanka%20is%20a,Lankan%20leopards%20and%20their%20ecosystems."
+      },
+      {
+        "title": "Human-Wildlife Conflict",
+        "image": "./images/leopard-threat-2.jpg",
+        "consequences": "Encounters with humans often result in retaliatory killings, posing a direct threat to leopard populations.",
+        "mitigation": "Initiatives involve community education, the implementation of secure livestock enclosures, and the development of early-warning systems to reduce conflicts and promote coexistence.",
+        "link": "https://www.slwcs.org/"
+      }
+    ]
+  }
+  

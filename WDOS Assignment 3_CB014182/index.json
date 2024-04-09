@@ -1,0 +1,55 @@
+{
+    "navigation": [
+      {
+        "title": "Home",
+        "link": "index.html"
+      },
+      {
+        "title": "Introduction",
+        "link": "introduction.html"
+      },
+      {
+        "title": "Department",
+        "link": "department.html"
+      },
+      {
+        "title": "Sri Lankan Leopard",
+        "link": "srilankanleopard.html"
+      },
+      {
+        "title": "Animals",
+        "link": "animals.html",
+        "subMenu": [
+          {
+            "title": "Yala National Park",
+            "link": "yala.html"
+          },
+          {
+            "title": "Wilpattu National Park",
+            "link": "wilpattu.html"
+          }
+        ]
+      }
+    ],
+    "footerLinks": [
+      {
+        "title": "Overview",
+        "link": "#container-info-h1"
+      },
+      {
+        "title": "Protected Areas and National Parks",
+        "link": "#container-info-h2"
+      },
+      {
+        "title": "Conservation Challenges",
+        "link": "#h2"
+      }
+    ],
+    "socialLinks": {
+      "facebook": "facebook.com",
+      "instagram": "instagram.com",
+      "twitter": "twitter.com",
+      "youtube": "youtube.com"
+    }
+  }
+  
