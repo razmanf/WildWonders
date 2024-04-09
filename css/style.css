@@ -7,7 +7,7 @@
 
 /* HEADER STARTS HERE */
 
-.header{
+.header {
   width: 100%;
   margin: auto;
   padding: 0 20px;
@@ -20,18 +20,19 @@
   top: 0;
   z-index: 1;
 }
-.logo{
+
+.logo {
   width: 100%;
   cursor: pointer;
   display: flex;
   max-width: 130px;
 }
 
-/* HEADER ENDS HERE */                    
+/* HEADER ENDS HERE */
 
-/*** ALL NAVIGATION STARTS HERE ***/ 
+/*** ALL NAVIGATION STARTS HERE ***/
 
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   margin-left: 190px;
@@ -42,28 +43,32 @@
   top: 0;
   z-index: 3;
 }
-.navbar ul{
+
+.navbar ul {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   white-space: nowrap;
   padding: 0 240px;
 }
-.navbar ul li{
+
+.navbar ul li {
   list-style: none;
-  display:inline-block;
+  display: inline-block;
   cursor: pointer;
   position: relative;
   line-height: 30px;
   margin: 0 10px;
   border-radius: 3px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
   text-transform: uppercase;
   padding: 7px 13px;
   font-size: 16px;
   position: relative;
 }
-.navbar ul li a:before{
+
+.navbar ul li a:before {
   position: absolute;
   content: '';
   left: 0;
@@ -75,21 +80,25 @@
   transform-origin: center;
   transition: transform .2s linear;
 }
-.navbar ul li a:hover:before{
+
+.navbar ul li a:hover:before {
   transform: scaleX(1);
   transform-origin: center;
   transition: transform .4s linear;
 }
-.navbar ul li:hover{
-  background: black;
-  color: white;
-}
-.navbar ul li.active, li:hover{
+
+.navbar ul li:hover {
   background: black;
   color: white;
 }
 
-  /* SUBMENU STARTS  HERE */
+.navbar ul li.active,
+li:hover {
+  background: black;
+  color: white;
+}
+
+/* SUBMENU STARTS  HERE */
 
 .submenu {
   display: none;
@@ -99,15 +108,18 @@
   background-color: #333;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .submenu ul {
   list-style: none;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
+
 .submenu ul li {
   display: block;
   margin: 0 0px;
 }
+
 .submenu ul li a {
   display: block;
   color: white;
@@ -115,36 +127,42 @@
   white-space: nowrap;
   text-align: left;
 }
+
 .submenu a:hover {
   background-color: #555;
 }
-.submenu ul li a.active{
+
+.submenu ul li a.active {
   background-color: #555;
 }
-.navbar li:hover .submenu{
+
+.navbar li:hover .submenu {
   display: block;
 }
+
 .navbar li:hover a:before {
   transform: scaleX(1);
-  
+
   background: white;
 }
-.submenu ul li a:before{
+
+.submenu ul li a:before {
   transform: scaleX(1);
   background: none;
   width: 0;
 }
+
 .navbar ul li.active a:before {
   transform: scaleX(1);
   background: white;
 }
 
-  /* SUBMENU ENDS HERE */
+/* SUBMENU ENDS HERE */
 
-  /* HAMBURGER MENU STARTS HERE */
+/* HAMBURGER MENU STARTS HERE */
 
 label #btn,
-label #cancel{
+label #cancel {
   color: black;
   font-size: 30px;
   float: right;
@@ -153,56 +171,68 @@ label #cancel{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: block;
 }
+
 @media (max-width: 1000px) {
-  .logo{
+  .logo {
     width: 100%;
     cursor: pointer;
     display: flex;
     max-width: 130px;
   }
-  .navbar ul li a{
+
+  .navbar ul li a {
     font-size: 15px;
   }
-  .header{
+
+  .header {
     height: 100px;
   }
-  .navbar{
+
+  .navbar {
     height: 100px;
     white-space: nowrap;
     z-index: 3;
   }
-  .navbar ul{
+
+  .navbar ul {
     font-size: 15px;
   }
 }
+
 @media (max-width: 944px) {
-  .logo{
+  .logo {
     margin-left: -20px;
     width: 100%;
     cursor: pointer;
     display: flex;
     max-width: 130px;
   }
-  .navbar ul li a{
+
+  .navbar ul li a {
     font-size: 15px;
   }
-  .header{
+
+  .header {
     height: 100px;
   }
-  .navbar ul{
+
+  .navbar ul {
     font-size: 15px;
     padding: 0 200px;
     z-index: 3;
   }
 }
+
 @media (max-width: 860px) {
-  label #btn{
+  label #btn {
     display: block;
   }
-  .navbar ul{
+
+  .navbar ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -211,17 +241,20 @@ label #cancel{
     padding: 20px 0px;
     left: -100%;
     text-align: center;
-    transition:all .5s;
+    transition: all .5s;
     z-index: 3;
   }
-  .navbar ul li{
+
+  .navbar ul li {
     display: table;
     margin: 50px auto;
     line-height: 33px;
   }
-  .navbar ul li a{
+
+  .navbar ul li a {
     font-size: 18px;
   }
+
   .submenu {
     display: none;
     position: absolute;
@@ -230,16 +263,19 @@ label #cancel{
     background-color: #333;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
   .submenu ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     display: contents;
   }
+
   .submenu ul li {
     display: block;
     margin: 0 0px;
   }
+
   .submenu ul li a {
     display: block;
     color: white;
@@ -247,37 +283,46 @@ label #cancel{
     white-space: nowrap;
     text-align: left;
   }
+
   .submenu a:hover {
     background-color: #555;
   }
-  .navbar li:hover .submenu{
+
+  .navbar li:hover .submenu {
     display: block;
   }
+
   .navbar li:hover a:before {
     transform: scaleX(1);
     background: white;
   }
-  .submenu ul li a:before{
+
+  .submenu ul li a:before {
     transform: scaleX(1);
     background: none;
     width: 0;
   }
+
   .navbar ul li.active a:before {
     transform: scaleX(1);
     background: white;
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
   }
-  #check:checked ~ label #btn{
-    display: none;  
+
+  #check:checked~label #btn {
+    display: none;
   }
-  #check:checked ~ label #cancel{
+
+  #check:checked~label #cancel {
     display: block;
   }
 }
+
 @media (max-width: 490px) {
-  .navbar ul{
+  .navbar ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -286,17 +331,20 @@ label #cancel{
     padding: 20px 0px;
     left: -100%;
     text-align: center;
-    transition:all .5s;
+    transition: all .5s;
     z-index: 3;
   }
-  .navbar ul li{
+
+  .navbar ul li {
     display: table;
     margin: 50px auto;
     line-height: 33px;
   }
-  .navbar ul li a{
+
+  .navbar ul li a {
     font-size: 18px;
   }
+
   .submenu {
     display: none;
     position: absolute;
@@ -305,16 +353,19 @@ label #cancel{
     background-color: #333;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
   .submenu ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     display: contents;
   }
+
   .submenu ul li {
     display: block;
     margin: 0 0px;
   }
+
   .submenu ul li a {
     display: block;
     color: white;
@@ -323,20 +374,22 @@ label #cancel{
     text-align: left;
   }
 }
-  /* HAMBURGER MENU ENDS HERE */
+
+/* HAMBURGER MENU ENDS HERE */
 
 /*** ALL NAVIGATION ENDS HERE ***/
 
 /* BANNER IMAGE AND CONTENT STARTS HERE */
 
-.banner{
+.banner {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(41, 38, 38, 0.75), rgba(47, 39, 39, 0.75)), url(../images/banner.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-.banner-content{
+
+.banner-content {
   width: 100%;
   position: relative;
   top: 30%;
@@ -346,20 +399,23 @@ label #cancel{
   font-style: italic;
   z-index: 0;
 }
-.banner-content .h1{
+
+.banner-content .h1 {
   font-size: 70px;
   margin-top: 80px;
   font-weight: 700;
   border-bottom: none;
 }
-.banner-content .p{
+
+.banner-content .p {
   margin: 20px auto;
   line-height: 25px;
   font-size: 25px;
   font-style: italic;
   font-weight: 300;
 }
-button{
+
+button {
   width: 200px;
   padding: 15px 0;
   text-align: center;
@@ -375,7 +431,8 @@ button{
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
-span{
+
+span {
   background: #009688;
   height: 100%;
   width: 0;
@@ -386,41 +443,49 @@ span{
   transition: 0.5s;
   z-index: -1;
 }
-button:hover span{
+
+button:hover span {
   width: 100%;
 }
-button:hover{
-  border:none;
+
+button:hover {
+  border: none;
 }
-@media (max-width: 860px){
-  .banner-content{
+
+@media (max-width: 860px) {
+  .banner-content {
     width: 100%;
     position: relative;
     top: 30%;
   }
-  .banner-content .h1{
+
+  .banner-content .h1 {
     font-size: 60px;
     margin-top: 80px;
     font-weight: 700;
   }
 }
-@media (max-width: 490px){
-  .banner-content{
+
+@media (max-width: 490px) {
+  .banner-content {
     width: 100%;
     position: relative;
     top: 30%;
   }
-  .banner-content .h1{
+
+  .banner-content .h1 {
     font-size: 50px;
     margin-top: 80px;
     font-weight: 700;
   }
-  .banner-content .p{
+
+  .banner-content .p {
     margin: 20px auto;
     line-height: 25px;
     font-size: 20px;
     font-weight: 300;
   }
+
   button {
     width: 200px;
     padding: 15px 0;
@@ -438,42 +503,93 @@ button:hover{
     font-style: normal;
   }
 }
-@media (max-width: 410px){
-  .banner-content{
+
+@media (max-width: 410px) {
+  .banner-content {
     width: 100%;
     position: relative;
     top: 30%;
   }
-  .banner-content .h1{
+
+  .banner-content .h1 {
     font-size: 40px;
     margin-top: 80px;
     font-weight: 700;
   }
 }
-@media (max-width: 380px){
-  .banner{
+
+@media (max-width: 380px) {
+  .banner {
     width: 414px;
   }
-  .banner-content{
+
+  .banner-content {
     width: 414px;
     position: relative;
     top: 30%;
   }
 }
+
 /* BANNER IMAGE AND CONTENT ENDS HERE */
 
 /* BODY CONTENT STARTS HERE */
 
-main{
+/* Styles for the popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.popup input[type="text"],
+.popup textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.popup button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px; /* Adjusted padding for smaller width */
+  cursor: pointer;
+  width: 100px;
+}
+
+.logout-button:hover {
+  background-color: #333;
+}
+
+main {
   flex-direction: column;
   display: flex;
 }
-body{
+
+body {
   position: relative;
   padding-bottom: 449px;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-.container{
+
+.container {
   background: white;
   padding: 30px;
   border-radius: 3px;
@@ -487,32 +603,39 @@ body{
   display: flex;
   flex-direction: column;
 }
-.container-info .h1{
+
+.container-info .h1 {
   font-size: 60px;
   text-align: center;
-  overflow-wrap:anywhere;
+  overflow-wrap: anywhere;
 }
-.container-info{
+
+.container-info {
   margin: 10px 30px;
 }
-.container-info .h2{
+
+.container-info .h2 {
   text-align: left;
   font-size: 40px;
   display: table;
   overflow-wrap: anywhere;
-}.container-info .p{
+}
+
+.container-info .p {
   text-align: justify;
   padding-top: 25px;
   font-size: 20px;
   line-height: 30px;
 }
-.card-container{
+
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 25px;
 }
-.card{
+
+.card {
   width: 325px;
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -521,89 +644,104 @@ body{
   margin: 20px;
   transition: transform 0.2s ease-in-out;
 }
-.container-info .card{
+
+.container-info .card {
   width: 490px;
 }
-.card img{
+
+.card img {
   width: 100%;
   height: auto;
 }
-.card-content{
+
+.card-content {
   padding: 16px;
 }
-.card-content .h3{
+
+.card-content .h3 {
   font-size: 28px;
   margin-bottom: 8px;
   font-style: normal;
   overflow-wrap: anywhere;
 }
-.card-content .h4{
+
+.card-content .h4 {
   font-style: normal;
   text-align: left;
-  font-size:20px;
+  font-size: 20px;
   border-bottom: none;
   font-weight: 400;
   display: flex;
 }
-.card-content .p{
-  color:#666;
+
+.card-content .p {
+  color: #666;
   font-size: 15px;
   line-height: 1.3;
   text-align: justify;
 }
-.card-content .btn2{
+
+.card-content .btn2 {
   display: inline-block;
   padding: 8px 16px;
   background-color: #333;
   text-decoration: none;
   border-radius: 4px;
   margin-top: 16px;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
-.btn2{
+
+.btn2 {
   display: table;
   padding: 8px 16px;
   background-color: #333;
   text-decoration: none;
   border-radius: 4px;
   margin-top: 16px;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
-.btn2:hover{
+
+.btn2:hover {
   background-color: #CDAB48;
   color: black;
 }
+
 .card-content .btn2:hover {
   background-color: #CDAB48;
   color: black;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
-.card-content .h3{
+
+.card-content .h3 {
   border-bottom: none;
 }
-.container-info ol{
+
+.container-info ol {
   padding-top: 10px;
   text-align: left;
   font-size: 20px;
 }
-.container-info ul{
+
+.container-info ul {
   padding-top: 10px;
   text-align: left;
   font-size: 20px;
   padding-left: 25px;
 }
+
 .container-info ol li {
   list-style-position: inside;
   list-style-type: decimal;
@@ -611,10 +749,12 @@ body{
   padding-left: 15px;
   font-weight: bold;
 }
+
 .container-info ol li:hover {
   background-color: white;
   color: black;
 }
+
 .container-info ul li {
   list-style-position: inside;
   list-style-type: disc;
@@ -622,14 +762,17 @@ body{
   padding-left: 15px;
   font-weight: bold;
 }
+
 .leopard ul li {
   font-weight: 400;
 }
+
 .container-info ul li:hover {
   background-color: white;
   color: black;
 }
-.container-intro{
+
+.container-intro {
   background: white;
   padding: 30px;
   border-radius: 3px;
@@ -644,87 +787,107 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
 }
-thead th, tbody td, tfoot td {
+
+thead th,
+tbody td,
+tfoot td {
   padding: 15px;
   text-align: left;
 }
+
 thead th {
   background-color: #333;
   color: white;
   text-align: center;
 }
+
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 tfoot {
   background-color: #333;
   color: white;
 }
+
 tfoot .p {
   text-align-last: center;
   margin-top: -20px;
 }
-.video{
+
+.video {
   margin-top: 20px;
   width: 100%;
 }
-.department-map{
+
+.department-map {
   margin-top: 20px;
   width: 80%;
 }
-.rotating-image{
+
+.rotating-image {
   display: flex;
   width: 100%;
 }
+
 .row-gallery {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
   margin-top: 30px;
 }
+
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
+
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-.container-info .h3{
+
+.container-info .h3 {
   color: black;
   display: block;
   font-size: 28px;
   margin-top: 10px;
   text-align: center;
 }
-.container-info h4{
+
+.container-info h4 {
   color: black;
   text-align: left;
-  font-size:20px;
+  font-size: 20px;
   display: table;
   border-bottom: none;
   font-weight: bold;
 }
-.img{
+
+.img {
   width: 100%;
   height: auto;
   padding-top: 30px;
 }
-.container-info .img{
-    width: 80%;
-    height: auto;
-    padding-top: 30px;
+
+.container-info .img {
+  width: 80%;
+  height: auto;
+  padding-top: 30px;
 }
+
 a:hover {
- cursor:pointer;
+  cursor: pointer;
 }
-.h1{
+
+.h1 {
   display: inline-block;
   font-weight: 900;
   font-style: italic;
@@ -732,7 +895,8 @@ a:hover {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-.h2{
+
+.h2 {
   display: inline-block;
   font-weight: 700;
   font-style: italic;
@@ -740,7 +904,8 @@ a:hover {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-.h3{
+
+.h3 {
   display: inline-block;
   font-weight: 400;
   font-style: italic;
@@ -749,7 +914,8 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
 }
-.h4{
+
+.h4 {
   display: inline-block;
   font-weight: 300;
   font-style: italic;
@@ -757,48 +923,58 @@ a:hover {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-.p{
+
+.p {
   font-weight: 400;
   font-style: normal;
 }
-.background-image{
+
+.background-image {
   width: 100%;
   height: 100vh;
   background-image: url(../images/background.jpg);
   background-size: cover;
   z-index: -2;
 }
+
 @media (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
+
 @media (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-  .container-info .h1{
+
+  .container-info .h1 {
     font-size: 35px;
   }
 }
-@media (max-width: 440px){
-  .card-content .h3{
+
+@media (max-width: 440px) {
+  .card-content .h3 {
     font-size: 20px;
   }
 }
-@media (max-width: 380px){
-  .container{
+
+@media (max-width: 380px) {
+  .container {
     margin: auto 80px;
   }
-  .container-intro{
+
+  .container-intro {
     margin: auto 80px;
   }
-  .container-info .h1{
+
+  .container-info .h1 {
     font-size: 20px;
   }
-  .card-content .h3{
+
+  .card-content .h3 {
     font-size: 15px;
   }
 }
@@ -813,26 +989,31 @@ a:hover {
   width: 100%;
   bottom: 0;
 }
+
 .footer .container2 {
   padding: 10px;
 }
-.row{
+
+.row {
   display: flex;
   justify-content: space-between;
   padding: 40px 100px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-.footer-col ul{
+
+.footer-col ul {
   list-style: none;
 }
-.footer-col h4{
+
+.footer-col h4 {
   color: white;
   margin-bottom: 25px;
   font-size: 22px;
   position: relative;
 }
-.footer-col h4::before{
+
+.footer-col h4::before {
   content: '';
   width: 70px;
   height: 2px;
@@ -840,20 +1021,24 @@ a:hover {
   background-color: #e91e64;
   bottom: -10px;
 }
-.footer-col ul li{
+
+.footer-col ul li {
   padding: 10px 0;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
   opacity: 0.7;
   transition: 0.5s;
 }
-.footer-col ul li a:hover{
+
+.footer-col ul li a:hover {
   opacity: 1;
 }
-.footer-col input{
+
+.footer-col input {
   border: none;
   width: 250px;
   height: 45px;
@@ -862,29 +1047,35 @@ a:hover {
   margin: 14px 0;
   background: white;
 }
-.footer-col .inputSubmit{
+
+.footer-col .inputSubmit {
   padding: 0px 20px;
   background-color: #e91e64;
   border: none;
   color: white;
 }
-.col p{
+
+.col p {
   color: white;
 }
-hr{
+
+hr {
   border: 1px solid white;
 }
-.row .socialIcons i{
+
+.row .socialIcons i {
   display: inline-block;
   color: white;
   font-size: 20px;
   margin: 0 15px;
   transition: 0.5s;
 }
-.row .socialIcons i:hover{
+
+.row .socialIcons i:hover {
   color: #e91e64;
 }
-@media (max-width: 860px){
+
+@media (max-width: 860px) {
   .footer {
     position: relative;
     width: 100%;
@@ -892,24 +1083,29 @@ hr{
     z-index: 2;
     margin-bottom: -449px;
   }
-  footer .row{
+
+  footer .row {
     flex-direction: column;
     padding: 20px 30px;
     width: 100%;
   }
-  footer .footer-col ul{
+
+  footer .footer-col ul {
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .footer-col input{
+
+  .footer-col input {
     width: 100%;
   }
-  .col p{
+
+  .col p {
     padding: 15px;
     white-space: nowrap;
   }
 }
-@media (max-width: 490px){
+
+@media (max-width: 490px) {
   .footer {
     position: relative;
     width: 100%;
@@ -917,24 +1113,29 @@ hr{
     z-index: 2;
     margin-bottom: -449px;
   }
-  footer .row{
+
+  footer .row {
     flex-direction: column;
     padding: 20px 30px;
     width: 100%;
   }
-  footer .footer-col ul{
+
+  footer .footer-col ul {
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .footer-col input{
+
+  .footer-col input {
     width: 100%;
   }
-  .col p{
+
+  .col p {
     padding: 15px;
     white-space: nowrap;
   }
 }
-@media (max-width: 410px){
+
+@media (max-width: 410px) {
   .footer {
     position: relative;
     width: 100%;
@@ -942,24 +1143,29 @@ hr{
     z-index: 2;
     margin-bottom: -449px;
   }
-  footer .row{
+
+  footer .row {
     flex-direction: column;
     padding: 20px 30px;
     width: 100%;
   }
-  footer .footer-col ul{
+
+  footer .footer-col ul {
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .footer-col input{
+
+  .footer-col input {
     width: 100%;
   }
-  .col p{
+
+  .col p {
     padding: 15px;
     white-space: nowrap;
   }
 }
-@media (max-width: 380px){
+
+@media (max-width: 380px) {
   .footer {
     position: relative;
     width: 100%;
@@ -968,19 +1174,23 @@ hr{
     min-width: fit-content;
     margin-bottom: -449px;
   }
-  footer .row{
+
+  footer .row {
     flex-direction: column;
     padding: 20px 30px;
     width: 100%;
   }
-  footer .footer-col ul{
+
+  footer .footer-col ul {
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .footer-col input{
+
+  .footer-col input {
     width: 100%;
   }
-  .col p{
+
+  .col p {
     padding: 15px;
     white-space: nowrap;
   }
